@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <title> Portfolio</title>
+    <link rel = 'stylesheet' href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <nav>
+            <img src="K__1_-removebg-preview.png" class="logo" width="200" height="200">
+            <ul> 
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="header_text">
+            <p>CS Student</p>
+            <h1>Hi, I'm <span>Nidhi
+            </span><br>Kushwaha From India</h1>
+        </div>
+    </div>
+
+</div> 
+<!-------------------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="WhatsApp Image 2022-11-01 at 8.02.35 AM.jpeg">
+            </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><h3> Hi I am Nidhi,<br> 
+                    Currently I am persuing my B.Tech degree<br>
+                    in Computer Science(Artificial Intelligence and Machine Learning)<br>
+                    from BIT(Banglore Institute of Technology) in Banglore.</h3></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills"><!--skills-->
+                        <ul>
+                            <li><span>ABC</span><br>ABC</li>
+                            <li><span>ABC</span><br>ABC</li>
+                            <li><span>ABC</span><br>ABC</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience"> <!------------experience------------>
+                        <ul>
+                            <li><span>ABC2</span><br>ABC</li>
+                            <li><span>ABC2</span><br>ABC</li>
+                            <li><span>ABC2</span><br>ABC</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education"> <!------------education------------>
+                        <ul>
+                            <li><span>ABC3</span><br>ABC</li>
+                            <li><span>ABC3</span><br>ABC</li>
+                            <li><span>ABC3</span><br>ABC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------services-------------->
+<div id = "services">
+    <div class = "container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <!--@fontawsome.com-->  
+            <div>
+                <i class="fa-light fa-code-compare"></i>
+                <h2>Artificial Intelligence</h2>
+                <p>services discription</p>
+                <a herf="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Cloud computing</h2>
+                <p>services discription</p>
+                <a herf="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Machine Learning</h2>
+                <p>services discription</p>
+                <a herf="#">Learn More</a>
+            </div>
+        </div> 
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
